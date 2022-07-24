@@ -10,8 +10,7 @@ public class MazeHandler : MonoBehaviour
 {
     [SerializeField]
     private int sizeMaze = 4;
-    [SerializeField]
-    private int emptyCells = 0;
+    private int emptyCells = 1;
 
     [SerializeField]
     private Button createMazeButton;
@@ -57,7 +56,6 @@ public class MazeHandler : MonoBehaviour
         tileMap = FindObjectOfType<MazeGraphic>();
 
         sizeMaze = Random.Range(3, 6);
-        emptyCells = RandomEmptyCeils(); 
 
         explorer.SetClamp(SizeMaze, SizeMaze);
 
